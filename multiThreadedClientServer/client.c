@@ -46,6 +46,8 @@ int main() {
          break;
       }
       printf("Server Reply: %s \n", server_reply);
+      memset(pack.frame, 0, sizeof(pack.frame));
+      memset(server_reply, 0, sizeof(server_reply));
    }
    return 0;
 }
